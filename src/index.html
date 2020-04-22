@@ -4,14 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Pricing component exmpple for Frontend mentor challenge" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Pricing component with toggle</title>
+    <link rel="stylesheet" href="./index.css" />
   </head>
 
   <body>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab aliquam quam quis non nemo nobis
-      totam magnam quae. Inventore fugit unde debitis doloremque! Sit repellat similique accusamus
-      ipsam adipisci? Dicta.
-    </p>
+    <div class="wrapper">
+      <header class="header">
+        <h1 class="text-center header__title">Our Pricing</h1>
+
+        <div class="flex items-center justify-center">
+          <p class="text-light-grayish-blue text-sm">Annually</p>
+
+          <label class="toggle" for="price">
+            <input class="toggle__input" type="checkbox" id="price" />
+            <div class="toggle__track"></div>
+            <div class="toggle__circle"></div>
+          </label>
+
+          <p class="text-light-grayish-blue text-sm">Monthly</p>
+        </div>
+      </header>
+
+      <main class="flex items-center justify-center">
+        <section class="plan">
+          <p class="plan__name">Basic</p>
+          <p class="plan__price">$199.00</p>
+
+          <ul class="plan-befits">
+            <li class="plan-befits__item">500 GB Storage</li>
+            <li class="plan-befits__item">2 Users Allowed</li>
+            <li class="plan-befits__item">Send up to 3 GB</li>
+          </ul>
+
+          <button class="button blue-gradient" type="button">Learn more</button>
+        </section>
+
+        <section class="plan">
+          <p class="plan__name">Basic</p>
+          <p class="plan__price">$199.00</p>
+
+          <ul class="plan-befits">
+            <li class="plan-befits__item">500 GB Storage</li>
+            <li class="plan-befits__item">2 Users Allowed</li>
+            <li class="plan-befits__item">Send up to 3 GB</li>
+          </ul>
+
+          <button class="button" type="button">Learn more</button>
+        </section>
+
+        <section class="plan">
+          <p class="plan__name">Basic</p>
+          <p class="plan__price">$199.00</p>
+
+          <ul class="plan-befits">
+            <li class="plan-befits__item">500 GB Storage</li>
+            <li class="plan-befits__item">2 Users Allowed</li>
+            <li class="plan-befits__item">Send up to 3 GB</li>
+          </ul>
+
+          <button class="button" type="button">Learn more</button>
+        </section>
+      </main>
+    </div>
   </body>
 </html>

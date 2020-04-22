@@ -1,0 +1,54 @@
+$toggle-width: 3.75em;
+$toggle-height: 2em;
+$toggle-spacing: 0.25em;
+
+.toggle {
+  font-size: 1rem;
+  margin: 0 1.5em;
+  height: $toggle-height;
+  width: $toggle-width;
+  position: relative;
+  cursor: pointer;
+
+  &__circle,
+  &__track {
+    position: absolute;
+  }
+
+  &__track {
+    border-radius: 100px;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+    background-color: hsl(237, 63%, 64%);
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.16s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &__circle {
+    border-radius: 50%;
+    left: $toggle-spacing;
+    top: $toggle-spacing;
+    background-color: white;
+
+    height: $toggle-height - ($toggle-spacing * 2);
+    width: $toggle-height - ($toggle-spacing * 2);
+    transform: translateX(0);
+    transition: all 0.16s cubic-bezier(0, 0, 0.2, 1);
+  }
+
+  &__input {
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+
+  &__input:checked ~ &__track {
+    background: hsl(236, 72%, 79%);
+  }
+
+  &__input:checked ~ &__circle {
+    transform: translateX($toggle-width - $toggle-height);
+  }
+}

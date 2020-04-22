@@ -1,0 +1,9 @@
+.header {
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+
+  &__title {
+    margin: 0 0 2rem;
+    color: var(--grayish-blue);
+  }
+}
