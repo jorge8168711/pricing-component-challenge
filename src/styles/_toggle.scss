@@ -4,7 +4,7 @@ $toggle-spacing: 0.25em;
 
 .toggle {
   font-size: 1rem;
-  margin: 0 1.5em;
+  margin: 0 1.45em;
   height: $toggle-height;
   width: $toggle-width;
   position: relative;
@@ -20,10 +20,9 @@ $toggle-spacing: 0.25em;
     top: 0;
     left: 0;
     background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
-    background-color: hsl(237, 63%, 64%);
     height: 100%;
     width: 100%;
-    transition: background-color 0.16s cubic-bezier(0, 0, 0.2, 1);
+    transition: background-image 0.16s cubic-bezier(0, 0, 0.2, 1);
   }
 
   &__circle {
@@ -45,7 +44,7 @@ $toggle-spacing: 0.25em;
   }
 
   &__input:checked ~ &__track {
-    background: hsl(236, 72%, 79%);
+    background-image: linear-gradient(to right, hsl(236, 72%, 79%), hsl(236, 72%, 79%));
   }
 
   &__input:checked ~ &__circle {
