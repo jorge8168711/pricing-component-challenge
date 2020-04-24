@@ -25,6 +25,10 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 2rem;
+
+  @media screen and (max-width: 400px) {
+    padding: 0 1.5rem;
+  }
 }
 
 .attribution {
@@ -32,6 +36,7 @@ body {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
   color: hsl(228, 45%, 44%);
 }
